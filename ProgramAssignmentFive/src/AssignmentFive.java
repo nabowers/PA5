@@ -20,12 +20,12 @@ import java.util.Scanner;
  * User - no input required
  */
 public class AssignmentFive {
-        BinarySearchTree[] list = new BinarySearchTree[26];
-        long countWNF = 0;//countWordNotFound
-        long countWF = 0;//countWordFound
-        long countCWNF = 0;//countCompareWordNotFound - Spelled Incorrectly
-        long countCWF = 0;//countCompareWordFound - Spelled Correctly
-        long comparison = 0;//comparison of the words and number counted
+    BinarySearchTree[] list = new BinarySearchTree[26];
+    long countWNF = 0;//countWordNotFound
+    long countWF = 0;//countWordFound
+    long countCWNF = 0;//countCompareWordNotFound - Spelled Incorrectly
+    long countCWF = 0;//countCompareWordFound - Spelled Correctly
+    long comparison = 0;//comparison of the words and number counted
         
         /**
          * 
@@ -49,12 +49,12 @@ public class AssignmentFive {
      */
     public AssignmentFive(){
         for(int i = 0 ; i < list.length; i++)    
-            list[i] = new BinarySearchTree<>(); 
+            list[i] = new BinarySearchTree<>();
     }//Assignment Four
     
     /**
      *  readFile - Reads the dictionary file, changes the words to lower case
-     *              and stores it in a Linked List.
+     *              and stores it in a Binary Search Tree.
      *           - Counts the comparison of words spelled correctly/incorrectly
      *           - Closes the file when completed.
      *           - Pre Condition read in the file.
@@ -72,10 +72,6 @@ public class AssignmentFive {
                // System.out.println("word = " + word);
             }//while
            
-          //  list['a'-97].addFirst("a");
-          //  list['i'-97].addFirst("i");
-          //  list['a'-97].addLast("a");
-         //   list['i'-97].addLast("i");
             inf.close();
             
         }//try     
@@ -137,10 +133,10 @@ public class AssignmentFive {
         
     }//printOutput
 }//class
-/**
- run:
+/**run:
 The average number of comparison words found : 16.3475 
 The average number of comparison words not found : 10.3977 
-BUILD SUCCESSFUL (total time: 26 seconds)
+BUILD SUCCESSFUL (total time: 27 seconds)
 
+ * 
  */
